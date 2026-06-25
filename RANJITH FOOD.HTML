@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>BEEs Food Corner</title>
+
+    <!-- Browser Tab Logo -->
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f8f8f8;
+        }
+
+        /* Navigation */
+
+        nav{
+            background:black;
+            color:white;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:15px 50px;
+        }
+
+        .logo{
+            display:flex;
+            align-items:center;
+            gap:10px;
+            color:#ffb300;
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        .logo img{
+            width:60px;
+            height:60px;
+            border-radius:50%;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+        }
+
+        nav ul li{
+            margin-left:25px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        nav ul li a:hover{
+            color:#ffb300;
+        }
+
+        /* Hero Section */
+
+        .hero{
+            background:black;
+            color:white;
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            padding:80px 50px;
+        }
+
+        .hero-text h3{
+            color:#ffb300;
+            margin-bottom:10px;
+        }
+
+        .hero-text h1{
+            font-size:55px;
+            margin-bottom:20px;
+        }
+
+        .hero-text p{
+            color:#cccccc;
+            margin-bottom:25px;
+            line-height:25px;
+        }
+
+        .btn{
+            background:#ffb300;
+            color:white;
+            border:none;
+            padding:12px 25px;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        .btn:hover{
+            background:#ff8800;
+        }
+
+        .hero-image img{
+            width:350px;
+            border-radius:50%;
+            box-shadow:0px 0px 30px #ffb300;
+        }
+
+        /* Menu Title */
+
+        .menu-title{
+            text-align:center;
+            margin-top:50px;
+        }
+
+        .menu-title h1{
+            color:#333;
+            margin-bottom:10px;
+        }
+
+        .menu-title p{
+            color:gray;
+        }
+
+        /* Food Cards */
+
+        .menu{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:30px;
+            padding:50px;
+        }
+
+        .card{
+            width:280px;
+            background:white;
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0px 0px 15px rgba(0,0,0,0.2);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+        }
+
+        .card-content{
+            text-align:center;
+            padding:20px;
+        }
+
+        .card-content h2{
+            margin-bottom:10px;
+        }
+
+        .price{
+            color:#ff9900;
+            font-size:25px;
+            font-weight:bold;
+            margin-bottom:15px;
+        }
+
+        .buy-btn{
+            background:#ff9900;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        .buy-btn:hover{
+            background:#ff6600;
+        }
+
+        /* Footer */
+
+        footer{
+            background:black;
+            color:white;
+            text-align:center;
+            padding:30px;
+        }
+
+        footer img{
+            width:80px;
+            border-radius:50%;
+            margin-bottom:10px;
+        }
+
+        footer h2{
+            color:#ffb300;
+            margin-bottom:10px;
+        }
+
+        footer p{
+            margin:5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+
+            <img src="logo.png" alt="BEEs Logo">
+
+            <span>BEEs Food</span>
+
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h3>🔥 Fresh & Tasty Food</h3>
+
+            <h1>
+                Delicious Food<br>
+                Near Your Town
+            </h1>
+
+            <p>
+                Enjoy fresh meals, quick delivery and amazing taste every day.
+            </p>
+
+            <button class="btn">View Menu</button>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="logo.png" alt="BEEs Logo">
+
+        </div>
+
+    </section>
+
+    <!-- Menu Title -->
+
+    <div class="menu-title">
+
+        <h1>🍽 Our Popular Dishes</h1>
+
+        <p>Freshly cooked and served hot</p>
+
+    </div>
+
+    <!-- Food Cards -->
+
+    <div class="menu">
+
+        <div class="card">
+
+            <img src="food.jpg">
+
+            <div class="card-content">
+
+                <h2>🍗 Chicken Biryani</h2>
+
+                <div class="price">₹149</div>
+
+                <button class="buy-btn">🛒 Buy Now</button>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="food1.jpg">
+
+            <div class="card-content">
+
+                <h2>🥗 Veg Meal</h2>
+
+                <div class="price">₹229</div>
+
+                <button class="buy-btn">🛒 Buy Now</button>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="food2.jpg">
+
+            <div class="card-content">
+
+                <h2>🍖 Chicken Meal</h2>
+
+                <div class="price">₹199</div>
+
+                <button class="buy-btn">🛒 Buy Now</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <img src="logo.png" alt="BEEs Logo">
+
+        <h2>BEEs Food Corner</h2>
+
+        <p>📍 Fresh Food | 🚚 Fast Delivery | ⭐ Best Quality</p>
+
+        <p>© 2026 BEEs Food Corner. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+</html>
